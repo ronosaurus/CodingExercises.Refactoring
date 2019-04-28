@@ -13,6 +13,7 @@
         /// <returns>An int representing the amount of damage caused</returns>
         public virtual int Attack()
         {
+            // code review: make Attach abstract to force implementation?
             return 0;
         }
 
@@ -21,7 +22,8 @@
         /// </summary>
         /// <returns>Returns true if the player can wear armor, false otherwise</returns>
         public virtual bool CanWearArmor()
-        {   
+        {
+            // code review: make CanWearArmor abstract to force implementation?
             return false;
         }
     }
